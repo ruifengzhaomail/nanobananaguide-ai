@@ -1,8 +1,45 @@
 
-'use client'
-
 import Link from 'next/link'
 import NewsletterSubscription from '@/components/NewsletterSubscription'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Nano Banana AI Guide - 最全面的AI图像编辑教程与最佳实践',
+  description: '掌握Nano Banana AI图像编辑技术，从入门到精通。我们提供全面的教程、最佳实践和实际案例，帮助您创建令人惊艳的AI生成图像。无论您是初学者还是专业人士，都能在这里找到提升AI图像创作能力的资源。',
+  keywords: [
+    'Nano Banana AI教程',
+    'AI图像生成指南',
+    'AI图像编辑工具',
+    '人工智能图像处理',
+    '图像到图像AI转换',
+    '文本到图像生成',
+    'AI艺术创作',
+    '机器学习图像生成',
+    'AI绘画教程',
+    'Nano Banana使用技巧'
+  ],
+  openGraph: {
+    title: 'Nano Banana AI Guide - Complete Tutorial & Best Practices',
+    description: 'Master Nano Banana AI with our comprehensive guide. Learn advanced techniques, best practices, and real-world use cases for AI image generation.',
+    type: 'website',
+    url: 'https://nanobananaguide.ai',
+    images: [{
+      url: '/og-image.svg',
+      width: 1200,
+      height: 630,
+      alt: 'Nano Banana AI Guide'
+    }]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Nano Banana AI Guide - Complete Tutorial & Best Practices',
+    description: 'Master Nano Banana AI with our comprehensive guide. Learn advanced techniques, best practices, and real-world use cases.',
+    images: ['/og-image.svg']
+  },
+  alternates: {
+    canonical: 'https://nanobananaguide.ai'
+  }
+}
 
 export default function Home() {
   return (

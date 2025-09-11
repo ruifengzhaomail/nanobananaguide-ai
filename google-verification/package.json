@@ -1,0 +1,8 @@
+{
+  "name": "google-verification",
+  "version": "1.0.0",
+  "description": "Google Search Console verification file",
+  "scripts": {
+    "build": "echo 'No build step required'"
+  }
+}
