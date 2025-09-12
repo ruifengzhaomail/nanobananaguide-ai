@@ -26,7 +26,7 @@ const baseConfig = {
   
   // 构建优化
   compiler: {
-    removeConsole: process.env.NODE_ENV === 'production'
+    // removeConsole: process.env.NODE_ENV === 'production'
   },
   
   // 重定向规则
