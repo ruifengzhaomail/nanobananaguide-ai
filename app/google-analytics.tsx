@@ -12,7 +12,7 @@ declare global {
   }
 }
 
-// Google Analytics测量ID
+// Updated Google Analytics configuration
 const GA_MEASUREMENT_ID = 'G-N43HLCBFK6'; // 实际的GA4测量ID
 
 function GoogleAnalyticsInner() {
