@@ -13,7 +13,7 @@ declare global {
 }
 
 // Google Analytics测量ID
-const GA_MEASUREMENT_ID = 'G-2JBQX8HQMR'; // 实际的GA4测量ID
+const GA_MEASUREMENT_ID = 'G-N43HLCBFK6'; // 实际的GA4测量ID
 
 function GoogleAnalyticsInner() {
   const pathname = usePathname();
