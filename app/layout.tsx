@@ -91,7 +91,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="zh" suppressHydrationWarning>
       <head>
-        <GoogleAnalytics />
         <WebsiteStructuredData />
         <OrganizationStructuredData />
         <script
@@ -110,6 +109,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body>
+        <GoogleAnalytics />
         <PerformanceMonitor />
         <PerformanceOptimizer />
         <TopNavBar />
