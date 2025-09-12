@@ -5,7 +5,11 @@ import Footer from '@/components/Footer'
 import PerformanceMonitor from '@/components/PerformanceMonitor'
 import PerformanceOptimizer from '@/components/PerformanceOptimizer'
 import { WebsiteStructuredData, OrganizationStructuredData } from '@/components/StructuredData'
+import dynamic from 'next/dynamic'
+
+import ClientOnly from '@/components/ClientOnly'
 import GoogleAnalytics from './google-analytics'
+
 import { websiteSchema, organizationSchema } from '@/lib/seo'
 
 export const metadata = {
@@ -109,9 +113,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body>
-        <GoogleAnalytics />
-        <PerformanceMonitor />
-        <PerformanceOptimizer />
+        <ClientOnly><GoogleAnalytics /></ClientOnly>
+        {/* <PerformanceMonitor /> */}
+        {/* <PerformanceOptimizer /> */}
         <TopNavBar />
         <main className="container">{children}</main>
         <Footer />
