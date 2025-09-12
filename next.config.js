@@ -5,7 +5,6 @@ const nextConfig = {
   // 性能优化配置
   experimental: {
     optimizePackageImports: ['lucide-react'],
-    optimizeCss: true,
     scrollRestoration: true
   },
   
