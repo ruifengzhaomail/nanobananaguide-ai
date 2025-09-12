@@ -1,3 +1,5 @@
+'use client'
+
 // Google Analytics component for tracking website usage
 import Script from 'next/script'
 
